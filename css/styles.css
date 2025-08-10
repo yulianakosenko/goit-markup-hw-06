@@ -590,6 +590,8 @@ svg {
   height: auto;
   position: static;
   /* скидаємо absolute */
+  margin-right: 80px;
+  /* відступ справа */
 }
 
 .footer-socials-title {
@@ -658,6 +660,7 @@ svg {
   max-width: 1158px;
   margin: 0 auto;
   padding: 40px 15px;
+  
 }
 
 .footer-subscribe-text {
@@ -691,6 +694,7 @@ svg {
   border-radius: 4px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  
 }
 
 .footer-input-email::placeholder {
@@ -723,10 +727,11 @@ svg {
   background-color: #404bbf;
 }
 
-.footer-icon-arrow {
+.footer-icon-send {
   margin-left: 16px;
-  color: currentColor;
+  color: currentColor; 
 }
+
 /* КОНТЕЙНЕР МОДАЛКИ */
 
 .backdrop {
