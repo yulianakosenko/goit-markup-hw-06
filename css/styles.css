@@ -6,6 +6,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p {
@@ -45,8 +46,11 @@ img {
 /* Container */
 .container {
   max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 /* Universal section paddings */
 .section {
