@@ -1,0 +1,1033 @@
+/* Base styles
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+ 
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+} */
+/* 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Container */
+/*.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+} */
+/* Universal section paddings */
+.section {
+  padding: 120px 0;
+}
+/* Уніфікована стилізація всіх SVG */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  transition: fill 250ms ease-in-out;
+}
+
+
+
+/* Region Header
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background-color: #ffffff;
+  align-items: center;
+  box-shadow: 
+  0 1px 6px 0 rgba(46, 47, 66, 0.08),
+  0 1px 1px 0 rgba(46, 47, 66, 0.16),
+  0 2px 1px 0 rgba(46, 47, 66, 0.08);
+} */
+
+/* .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px 
+} */
+
+/* 
+.logo-accent {
+  content: 'Studio';
+  color: #2e2f42;
+  margin-left: 4px; 
+}
+
+/* .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+} */
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  color: #2e2f42;
+
+}
+
+.nav-link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2e2f42;
+  padding: 24px 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative; 
+}  
+
+.nav-link.current {
+  position: relative;
+
+}
+
+.nav-link.current::after {
+ content: "";
+ width: 100%;
+ height: 4px;
+ position: absolute;
+ left: 0;
+ bottom: -1px;
+ border-radius: 2px;
+ background-color: #404bbf;
+ color: #404bbf;
+}
+
+.nav-link:hover,
+.nav-link:focus, 
+.nav-link.current {
+  color: #404bbf;
+}
+
+/* Contacts */
+.contacts {
+  font-style: normal;
+}
+
+.contact-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-style: normal; 
+}
+
+.contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 0.02em;
+  transition: color 250ms ease-in-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  background-color: #2e2f42;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 188px 0;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1.jpg");
+    /* шлях до фонового зображення */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    /* щоб не розтягувалось більше 1440px */
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 496px;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  /*margin-bottom: 48px;*/
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.hero-button {
+  display: block; 
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* Features */
+.features {
+  padding: 120px 0;
+}
+
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  width: 262.6px;
+  flex-basis: calc((100% - 72px) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  width: 264px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+/* FEATURES icons */
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  fill: #4d5ae5;
+  margin-bottom: 16px;
+  padding: 16px;
+  color: rgba(46, 47, 66, 1);rgba(77, 90, 229, 1);
+}
+
+.feature-item:hover .feature-icon,
+.feature-item:focus-within .feature-icon {
+  fill: #404bbf;
+  /* активний колір при hover/focus */
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #434455;
+}
+
+/* Загальний стиль для секції "Team" */
+:root {
+  --primary-color: #4d5ae5;
+  --primary-color-hover: #404bbf;
+  --icon-color: #f4f4fd;
+}
+
+/* Загальний стиль для секції "Team" */
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Заголовок */
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* Список карток */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Картка учасника */
+.team-item {
+  border-radius: 0;
+  background-color: #ffffff;
+  /* для першого елемента */
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+  width: 264px;
+  text-align: center;
+  position: relative;
+}
+
+
+.team-item:first-child {
+  border-radius: 0 0 4px 4px;
+}
+/* Зображення учасника */
+.team-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Контейнер інформації */
+.team-info {
+  padding: 32px 0;
+}
+
+/* Ім'я */
+.team-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+/* Посада */
+.team-role {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #434455;
+  margin-bottom: 8px;
+}
+
+/* Список соціальних мереж */
+.team-socials {
+  display: flex;
+  justify-content: center;
+
+  gap: 24px;
+  
+  margin: 0;
+  list-style: none;
+}
+
+/* Елемент соцмережі */
+.team-socials li {
+  width: 40px;
+  height: 40px;
+}
+
+/* Посилання соцмережі */
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ховер і фокус на посиланнях */
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--primary-color-hover);
+}
+
+/* Іконки соцмереж */
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--icon-color);
+}
+
+/* --- Portfolio Section --- */
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 72px;
+  color: #2e2f42;
+}
+
+/* Portfolio list layout */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  background-color: #ffffff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover effect with shadow */
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* Image container with overlay */
+.portfolio-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image styling */
+.portfolio-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Overlay paragraph */
+.portfolio-paragraph {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Show overlay on hover */
+.portfolio-item:hover .portfolio-paragraph {
+  transform: translateY(0%);
+}
+
+/* Portfolio text below image */
+.portfolio-text {
+  padding: 32px 16px;
+}
+
+.portfolio-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 0 0 8px 0;
+}
+
+.portfolio-role {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* --- Футер --- */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-container {
+  padding: 0 15px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-logo-accent {
+  color: #f4f4fd;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: var(--footer-text-color, #f4f4fd);
+  letter-spacing: 0.02em;
+  max-width: 300px;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Зробимо колонку для логотипу та тексту */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-right: 120px;
+  
+}
+
+/* Відключаємо позиціонування absolute, використовуємо флекс */
+.footer-socials {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Вирівняти соцмережі праворуч */
+  gap: 12px;
+  width: auto;
+  height: auto;
+  position: static;
+  /* скидаємо absolute */
+  margin-right: 80px;
+  /* відступ справа */
+}
+
+.footer-socials-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+} 
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+  transform: scale(1.1);
+}
+
+/* Лише для першого пункту списку */
+.footer-social-item:first-child .footer-social-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link svg {
+  width: 24px;
+  height: 24px;
+  color: #f4f4fd;
+}
+
+/* Змінні для кольорів */
+:root {
+  --footer-text-color: #f4f4fd;
+  --primary-color: #4d5ae5;
+  --hover-color: #31d0aa;
+}
+
+.footer-subscription {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 40px 15px;
+  
+}
+
+.footer-subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe-label {
+  display: block;
+}
+
+.footer-input-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.footer-input-email::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.footer-btn-submit {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn-submit:hover,
+.footer-btn-submit:focus {
+  background-color: #404bbf;
+}
+
+.footer-icon-send {
+  margin-left: 16px;
+  color: currentColor; 
+}
+
+/* КОНТЕЙНЕР МОДАЛКИ */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  /*display: none;  Сховати за замовчуванням */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  pointer-events: none;
+
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
+    /* відповідно до умови */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+
+
+.backdrop:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Кнопка закриття */
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  outline: none;
+}
+
+/* Іконка в кнопці закриття */
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2e2f42;
+}
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: #ffffff;
+}
+
+/* Текст параграфа */
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  margin-bottom: 16px;
+ 
+}
+/* Форма */ 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+/* Група полів */
+.form-group {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+/* Лейбл для input */
+ 
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Обгортка для input + іконка */
+.input-wrapper {
+  position: relative;
+}
+
+/* Інпут */
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+.form-input:focus {
+  border-color: #4D5AE5;
+}
+
+/* Іконка в input */
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(46, 47, 66, 0.4);
+  pointer-events: none;
+}
+
+.form-input:focus+.input-icon {
+  color: #4D5AE5;
+}
+/* Текстова область коментаря */
+.comment-group {
+  margin-bottom: 16px;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:focus {
+  border-color: #4D5AE5;
+}
+
+/* Чекбокс контейнер */
+.privacy-group {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* Прихований дефолтний чекбокс */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+/* Лейбл для чекбокса */
+.privacy-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  cursor: pointer;
+  align-items: center;
+  user-select: none;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+/* Кастомний чекбокс */
+.privacy-checkbox-custom {
+  display: inline-flex !important;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+
+/* Іконка чекбокса */
+.checkbox-icon {
+  width: 10px;
+  height: 8px;
+  fill: transparent;
+  pointer-events: none; 
+
+}
+
+/* Коли input checked — змінюємо фон і fill span через css-змінні */
+:root {
+  --checkbox-checked-bg: #404bbf;
+  /* фон при checked */
+  --checkbox-checked-fill: #F4F4FD;
+  /* колір іконки при checked */
+}
+
+/* При наведенні або фокусі на інпут — синя рамка */
+.visually-hidden:focus+.privacy-label .privacy-checkbox-custom,
+.privacy-label:hover .privacy-checkbox-custom {
+  border-color: #4D5AE5;
+}
+
+/* Застосування кольору фону при checked */
+.visually-hidden:checked+.privacy-label .privacy-checkbox-custom {
+  background-color: var(--checkbox-checked-bg);
+  border: none;
+  fill: var(--checkbox-checked-fill);
+  /* Змінюємо заливку іконки */
+  color: var(--checkbox-checked-fill);
+}
+
+
+.visually-hidden:checked+.privacy-label .checkbox-icon {
+  fill: #F4F4FD;
+}
+
+/* Посилання Privacy Policy */
+.privacy-link {
+  color: #4d5ae5;
+  margin-left: 4px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-skip-ink: none;
+  line-height: 1.33333;
+}
+
+/* Кнопка відправки */
+.submit-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4D5AE5;
+  border: none;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #3c48b1;
+  outline: none;
+}
